@@ -75,13 +75,14 @@ addToCard.addEventListener("click", () => {
     result.innerText = ` $${parseInt( productNumber.innerText) * 125}.00`
 })
 deleteBtn.addEventListener("click", () => {
+     productNum.style.display = "none"
     cartContent.style.display = "none"
     empty_cart.style.display = "block"
 })
-//handle checkout btn click
+//handle the moda display
 const checkoutBtn = document.querySelector(".checkoutBtn");
 const checkoutContainer = document.querySelector(".chckout-container")
-checkoutBtn.addEventListener("click", () => {
+review.addEventListener("click", () => {
     checkoutContainer.style.display = "flex";
     cart.style.display = "none";
     closebtn.style.display = "block";
